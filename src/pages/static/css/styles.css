@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+}
+nav {
+    background-color: brown;
+    color: white;
+    font-size: 0.75rem;
+    padding: 7px 5px 7px 0px;
+    text-align: right;
+}
+
+a.nav {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    margin: 30px 20px 0px 20px;
+}
+
+.btn {
+    background-color: brown;
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+div.prenda-box {
+    border: 1px solid black;
+    width: 25%;
+    
+}
+
+div.prendas {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+
+div.agregar {
+    text-align: center;
+}

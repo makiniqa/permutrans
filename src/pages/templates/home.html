@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block page-title %}
+    <title>Permutrans</title>
+{% endblock %}
+
+{% block content %}
+    <h1>Bienvenidx a Permutrans</h1>
+    <h2>Intercambiar ropa nunca fue tan fácil</h2>
+    <a href="{% url 'login' %}">Iniciar sesión</a>
+    <a href="{% url 'register' %}">Registrarse</a>
+{% endblock %}

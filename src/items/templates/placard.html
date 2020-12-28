@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block page-title %}
+    <title>Tu placard</title>
+{% endblock %}
+{% block content %}
+    {% include 'includes/navbar.html' %}
+    <main>
+        <div class="prendas">
+            {% for item in object_list %}
+                <div class="prenda-box">
+                    <h3>{{item.title}}</h3>
+                    <h4>{{item.description}}</h4>
+                </div>
+            {% endfor %}
+        </div>
+        <div class="agregar">
+            <a class="btn" href="{% url 'create' %}">Agregar prenda</a>
+        </div>
+    </main>
+{% endblock %}

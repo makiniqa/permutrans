@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block page-title %}
+    <title>Tu cuenta</title>
+{% endblock %}
+{% block content %}
+    {% include 'includes/navbar.html' %}
+    <main>
+        <a class="btn" href="{% url 'all' %}">Ver placard</a>
+        <a class="btn" href="{% url 'create' %}">Agregar prenda a tu placard</a>
+    </main>
+
+{% endblock %}

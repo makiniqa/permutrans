@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block page-title %}
+    <title>Subir prenda</title>
+{% endblock %}
+{% block content %}
+    {% include 'includes/navbar.html' %}
+    <form method='POST'> {% csrf_token %}
+        {{ form.as_p }}
+        <input type='submit' value='Guardar'>
+    </form>
+<a href="{% url 'all' %}">Ver placard</a>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block page-title %}
+    <title>Prenda eliminada</title>
+{% endblock %}
+{% block content %}
+    {% include 'includes/navbar.html' %}
+    <main>
+        <p>Operación realizada con éxito.</p>
+        <a class="btn" href="{% url 'all' %}">Ver placard</a>
+    </main>
+    
+{% endblock %}

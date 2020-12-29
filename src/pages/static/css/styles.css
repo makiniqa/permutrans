@@ -14,6 +14,16 @@ a.nav {
     text-decoration: none;
 }
 
+h1,h2,h3,h4,h5,h6 {
+    margin-bottom: 20px;
+}
+
+.prenda-title {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: brown;
+}
+
 main {
     margin: 30px 20px 0px 20px;
 }
@@ -23,11 +33,18 @@ main {
     color: white;
     text-decoration: none;
     padding: 5px 10px;
+    border: none;
+    display: inline-block;
+    text-align: center;
+    width: 10%;
 }
 
 div.prenda-box {
+    box-sizing: border-box;
     border: 1px solid black;
     width: 25%;
+    padding: 20px;
+    text-align: center;
     
 }
 
@@ -37,6 +54,19 @@ div.prendas {
     padding-bottom: 20px;
 }
 
-div.agregar {
+div.buttons {
+    margin-top: 20px;
+}
+
+.center {
     text-align: center;
+}
+
+.form{
+    margin-top: 10px;
+
+}
+
+.mb {
+    margin-bottom: 50px;
 }

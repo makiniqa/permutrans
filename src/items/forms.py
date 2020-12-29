@@ -14,3 +14,7 @@ class ItemForm(forms.ModelForm):
             'description',
         ]
 
+class DeleteForm(forms.ModelForm):
+    class Meta:
+        model = Item 
+        fields = []

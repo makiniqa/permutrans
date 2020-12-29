@@ -5,8 +5,11 @@
 {% block content %}
     {% include 'includes/navbar.html' %}
     <main>
-        <a class="btn" href="{% url 'all' %}">Ver placard</a>
-        <a class="btn" href="{% url 'create' %}">Agregar prenda a tu placard</a>
+        <h1>¿Qué querés hacer hoy?</h1>
+        <div class="buttons">
+            <a class="btn" href="{% url 'all' %}">Ver placard</a>
+            <a class="btn" href="{% url 'create' %}">Agregar prenda a tu placard</a>
+        </div>
     </main>
 
 {% endblock %}

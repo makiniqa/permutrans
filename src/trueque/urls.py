@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.urls import path
 from accounts.views import register_page, login_page, logout_user
 from pages.views import home_page, profile_page
-from items.views import item_create, item_all
+from items.views import item_create, item_all, item_detail, item_delete, item_update
 
 urlpatterns = [
     path('', home_page, name='home'),
@@ -27,5 +27,8 @@ urlpatterns = [
     path('salir', logout_user, name='logout'),
     path('perfil', profile_page, name='profile'),
     path('subir', item_create, name='create'),
-    path('placard', item_all, name='all')
+    path('placard', item_all, name='all'),
+    path('prenda/<int:pk>', item_detail, name='item-detail'),
+    path('delete/<int:item_id>', item_delete, name='delete'),
+    path('update/<int:item_id>', item_update, name='update'),
 ]

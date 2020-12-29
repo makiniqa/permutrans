@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block page-title %}
+    <title>{{object.title}}</title>
+{% endblock %}
+{% block content %}
+    {% include 'includes/navbar.html' %}
+    <main class="center">
+        <div>
+            <h1 class="prenda-detail-title">{{ object.title }}</h1>
+            <p class="mb">{{ object.description }}</p>
+        </div>
+        <div class="buttons">
+            <!--<a href="delete/{{item.id}}" class="btn btn-danger" id = '{{item.id}}'>delete</a>-->
+            <a href="{% url 'delete' item_id=object.id %}" class="btn" id = '{{item.id}}'>Borrar</a>
+            <a href="{% url 'update' item_id=object.id %}" class="btn" id = '{{item.id}}'>Modificar</a>
+            <a class="btn" href="{% url 'all' %}">Ver placard</a>
+        </div>
+    </main>
+    
+{% endblock %}
